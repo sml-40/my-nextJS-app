@@ -59,12 +59,16 @@ export default function Home() {
 					/>
 				</div>
 
+				<div className={styles.center}>
+					<h1>Welcome to my Elearning site</h1>
+				</div>
+
 				<div className={styles.grid}>
 					<Link
 						href="learn/next"
 						className={styles.card}>
 						<h2>
-							Learn NextJS <span>-&gt;</span>
+							Learn Next <span>-&gt;</span>
 						</h2>
 						<p>
 							Find in-depth information about Next.js features and&nbsp;API.
@@ -74,39 +78,33 @@ export default function Home() {
 						href="learn/react"
 						className={styles.card}>
 						<h2>
-							Learn ReactJS <span>-&gt;</span>
+							Learn React <span>-&gt;</span>
+						</h2>
+						<p>
+							Learn about ReactJS in an interactive course with&nbsp;quizzes!
+						</p>
+					</Link>
+					<Link
+						href="learn/vue"
+						className={styles.card}>
+						<h2>
+							Learn Vue <span>-&gt;</span>
 						</h2>
 						<p>
 							Learn about ReactJS in an interactive course with&nbsp;quizzes!
 						</p>
 					</Link>
 
-					<a
-						href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-						className={styles.card}
-						target="_blank"
-						rel="noopener noreferrer">
+					<Link
+						href="learn/angular"
+						className={styles.card}>
 						<h2>
-							Templates <span>-&gt;</span>
+							Learn Angular <span>-&gt;</span>
 						</h2>
 						<p>
-							Discover and deploy boilerplate example Next.js&nbsp;projects.
+							Learn about ReactJS in an interactive course with&nbsp;quizzes!
 						</p>
-					</a>
-
-					<a
-						href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-						className={styles.card}
-						target="_blank"
-						rel="noopener noreferrer">
-						<h2>
-							Deploy <span>-&gt;</span>
-						</h2>
-						<p>
-							Instantly deploy your Next.js site to a shareable URL
-							with&nbsp;Vercel.
-						</p>
-					</a>
+					</Link>
 				</div>
 			</main>
 		</>
