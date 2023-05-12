@@ -7,20 +7,17 @@ export default function Contact() {
 	const router = useRouter();
 	const { contactId } = router.query;
 	const contact = contacts.find((contact) => contact.id === contactId);
+	const [first, last] = contact?.name.split(" ");
 	return (
 		<Layout>
-			<h1>Contact</h1>
-			<p>{contact.name}</p>
-			<p>{contact.email}</p>
-			<p>{contact.phone}</p>
-			<p>{contact.website}</p>
-			<p>{contact.address}</p>
-			<p>{contact.company}</p>
-			<p>{contact.jobTitle}</p>
-			<p>{contact.notes}</p>
-			<Link href="/contacts">
-				<a>Back to Contacts</a>
-			</Link>
+			<a
+				href="#"
+				onClick={() => router.back()}>
+				Back
+			</a>
+			<h2>
+				Contact: {last.toUpperCase()}, {first}
+			</h2>
 		</Layout>
 	);
 }
