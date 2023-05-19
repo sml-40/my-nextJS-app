@@ -6,7 +6,11 @@ export default function Contacts() {
 		<>
 			<ul>
 				{contacts.map((contact) => {
-					return <li> {contact.name}</li>;
+					return (
+						<li>
+							<Link href={`contacts/${contact.id}`}>{contact.name}</Link>
+						</li>
+					);
 				})}
 			</ul>
 		</>
