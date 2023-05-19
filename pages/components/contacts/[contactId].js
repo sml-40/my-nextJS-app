@@ -1,4 +1,4 @@
-import Layout from "../layout";
+import Layout from "./layout";
 import { useRouter } from "next/router";
 import contacts from "pages/api/contacts.js";
 
@@ -14,7 +14,7 @@ export default function Contact() {
 	const fullName = `${first} ${last}`;
 	console.log(`fullName = ${fullName}`);
 	return (
-		<>
+		<Layout>
 			<a
 				href="#"
 				onClick={() => router.back()}>
@@ -23,6 +23,6 @@ export default function Contact() {
 			<h2>
 				Contact: {last.toUpperCase()}, {first}
 			</h2>
-		</>
+		</Layout>
 	);
 }

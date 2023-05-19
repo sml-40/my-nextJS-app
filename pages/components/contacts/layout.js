@@ -1,16 +1,12 @@
 import Link from "next/link";
-import styles from "../../styles/Home.module.css";
+import styles from "styles/Home.module.css";
 
 //** Menu Component Here */
 function Menu() {
 	return (
 		<ul>
-			<li>
-				<Link href="/">Home</Link>&nbsp;
-			</li>
-			<li>
-				<Link href="/about">About</Link>&nbsp;
-			</li>
+			<Link href="/">Home</Link>&nbsp;
+			<Link href="/components/contacts">Contacts</Link>
 		</ul>
 	);
 }
